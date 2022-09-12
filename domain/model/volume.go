@@ -9,7 +9,7 @@ type Volume struct{
 	//存储的访问模式，RWO,ROX,RWX
 	VolumeAccessMode string `json:"volume_access_mode"`
 	//sc 的 class name
-	VolumeStorageClassName string `json:"volume_storge_class_name"`
+	VolumeStorageClassName string `json:"volume_storage_class_name"`
 	//请求资源的大小
 	VolumeRequest float32 `json:"volume_request"`
 	//存储类型 Block，filesystem
