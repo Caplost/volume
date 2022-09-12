@@ -127,7 +127,7 @@ func (u *VolumeDataService) getResource (info *volume.VolumeInfo)(source v12.Res
 //获取访问模式
 func (u *VolumeDataService) getAccessModes(info *volume.VolumeInfo)(pvam []v12.PersistentVolumeAccessMode)  {
 	var pm v12.PersistentVolumeAccessMode
-	switch info.VolumeNamespace {
+	switch info.VolumeAccessMode {
 	case "ReadWriteOnce":
 		pm = v12.ReadWriteOnce
 	case "ReadOnlyMany":
